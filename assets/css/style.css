@@ -265,3 +265,56 @@ footer {
   }
 
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+body.light-mode {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+body.light-mode .navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+body.light-mode .card {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+body.light-mode .section.alt {
+  background: #f1f5f9;
+}
+
+body.light-mode nav a {
+  color: #0f172a;
+}
+
+body.light-mode .tech-grid span {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+body.light-mode footer {
+  background: #ffffff;
+  color: #64748b;
+}
+
+.toggle-btn {
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: bold;
+}
